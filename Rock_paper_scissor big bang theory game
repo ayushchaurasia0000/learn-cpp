@@ -1,0 +1,32 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+  int user =0;
+srand(time(NULL));
+ int x = rand() % 3 + 1;
+
+ std::cout << "start the game\n";
+std::cout << "rock paper scissors!\n";
+std::cout << "the game will start\n";
+
+std::cout << "1) ✊\n";
+std::cout << "2) ✋\n";
+std::cout << "3) ✌️\n";
+
+std::cout << "shoot!\n ";
+std::cin>>user;
+if( x == user&& x==1)
+std::cout << "you are stone and won\n";
+else if(x==user&& x==2)
+std::cout << "you are paper and won\n";
+else if(x==user&& x==3)
+std::cout << "you are scissor and won\n";
+else
+std::cout << "enter again\n";
+
+
+ //if( x == a)
+ //std::cout<< "you are the winner\n";
+}
